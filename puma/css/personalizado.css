@@ -1,0 +1,130 @@
+.modulo-txt-img .justify-content-start .media {
+    left: 50%
+}
+}
+
+.modulo-txt-img {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden
+}
+
+.modulo-txt-img .wrapper {
+    position: relative;
+    min-height: 30vw;
+    display: flex;
+    align-items: center
+}
+
+.modulo-txt-img .text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.modulo-txt-img .media {
+    position: relative;
+    margin-top: 30px;
+    width: 100vw;
+    height: 65vw;
+    overflow: hidden;
+}
+
+.modulo-txt-img .media .media-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+.modulo-txt-img .media [data-js-parallax] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.modulo-txt-img .media [data-js-parallax] .media-item {
+    top: 50%;
+    height: 140%;
+    transform: translateY(-50%)
+}
+
+@media (min-width:768px) {
+    .modulo-txt-img .media {
+        position: absolute;
+        width: 50vw;
+        height: 100%;
+        top: 0;
+        left: calc(0% + 0px);
+        margin-top: 0;
+    }
+
+    .modulo-txt-img .media .media-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center
+    }
+
+    @media screen and (max-width:800px) and (orientation:landscape),
+screen and (max-height:300px) {
+    .mfp-img-mobile .mfp-image-holder {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .text-secondary {
+        color: #db1f26 !important;
+    }
+
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0
+    }
+    
+    .no-gutters>.col,
+    .no-gutters>[class*=col-] {
+        padding-right: 0;
+        padding-left: 0
+    }
+    
+    .d-none {
+        display: none !important
+    }    
+    .galeria-masonry .item {
+        position: relative
+    }
+    
+    .galeria-masonry .item:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%
+    }
+    
+    .galeria-masonry .item .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center
+    }
+    
+    .galeria-masonry .item-xl:before {
+        padding-bottom: 200%
+    }
+    

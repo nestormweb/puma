@@ -1,0 +1,246 @@
+
+/*----------------------------------------------------------------------------------
+	GENERAL
+----------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Domaine Disp';
+    src: url('../fonts/DomaineDispSemibold.eot');
+    src: url('../fonts/DomaineDispSemibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DomaineDispSemibold.woff2') format('woff2'),
+        url('../fonts/DomaineDispSemibold.woff') format('woff'),
+        url('../fonts/DomaineDispSemibold.ttf') format('truetype'),
+        url('../fonts/DomaineDispSemibold.svg#DomaineDispSemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {font-family: 'Montserrat', sans-serif;}
+
+h2::before, h3::before {
+    content: '';
+    position: relative;
+    top: -15px;
+    left: 50%;
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin-left: -20px;
+    background-color: #da071d;
+}
+
+.main-titles {font-family: 'Domaine Disp'; font-size: 72px;}
+.sub-titles {font-family: 'Gilda Display';}
+
+.textos { height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;}
+
+.padding-row {padding: 65px 0;}
+.padding-row-sm {padding: 35px 0;}
+.padding-row-lg {padding: 150px 0;}
+
+.bg-main-title {position: relative;}
+.bg-main-title::before {
+    content: " "; position: absolute;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+.bg-grey {background-color: #f2f2f2;}
+
+
+/*----------------------------------------------------------------------------------
+	HEADER
+----------------------------------------------------------------------------------*/
+header {
+    font-size: 12px;
+    text-transform: uppercase;
+    background: url("../images/bg-main-header.gif") center repeat-x;
+}
+
+header .site-branding {background-color: #fff;}
+header .site-branding img {margin-top: 20px;}
+header .site-branding::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1000px;
+    width: 1000px;
+    background-color: #fff;
+}
+
+header .site-branding::after {
+    content: '';
+    position: absolute;
+    right: -45px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 80px solid #fff;
+    border-right: 50px solid transparent;
+}
+
+.sub-nav {padding: 8px 0 8px 40px; width: 100%;}
+.sub-nav ul {margin: 0; padding: 0; list-style-type: none;}
+.sub-nav ul li {display: inline-block; width: 50px;}
+.sub-nav ul li a {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    width: 35px;
+    height: 100%;
+}
+.sub-nav ul li a::before {
+    content: '';
+    height: 26px;
+    width: 0;
+    border-right: solid 1px #fff;
+    position: absolute;
+    left: -15px;
+    transform: rotate(25deg) scaleY(2);
+    transform-origin: bottom;
+    opacity: .8;
+}
+
+
+.main-nav {padding: 8px 0 8px 30px; width: 100%;}
+.main-nav ul {margin: 0; padding: 0; list-style-type: none;}
+.main-nav ul li {display: inline-block; padding: 0 10px;}
+.main-nav ul li a {color: #fff;}
+
+
+
+
+/*----------------------------------------------------------------------------------
+	CONTENT
+----------------------------------------------------------------------------------*/
+
+
+/* pagina estaciones -------------------------------------------*/
+.title-estaciones {background: url('../images/bg-estaciones.jpg') center no-repeat;}
+#map-estaciones {height: 680px;}
+
+/* Página la empresa  Css añadido por Nestor Morel -------------------------------------------*/
+.empresa { background-color: #db1f26;}
+.salto { padding-top: 50px !important;}
+/* Página sesion  Css añadido por Nestor Morel -------------------------------------------*/
+
+
+/* pagina contactos -------------------------------------------*/
+.title-contacto {background: url('../images/bg-contacto.jpg') center no-repeat;}
+.info-contacto-row {margin-top: -50px;}
+
+.contacto-adicional {padding-bottom: 70px;}
+.contacto-adicional ul {margin: 0; padding: 0; list-style-type: none;}
+.contacto-adicional ul li {font-size: 13px; padding: 4px 0;}
+.contacto-adicional ul li i {width: 20px; text-align: center;}
+
+#map {height: 420px;}
+
+
+/* pagina trabaja con nosotros -------------------------------------------*/
+.title-talento-humano {background: url('../images/bg-talento-humano.jpg') center no-repeat;}
+.separador hr {border-top: 2px solid #da071d; width: 50px;}
+
+#forma-parte-form label {font-family: 'Gilda Display'; font-size: 15px;}
+#forma-parte-form input, #forma-parte-form select {border-radius: 0px; font-size: 15px;}
+#forma-parte-form ul {margin: 0; padding: 0; padding-left: 12px; list-style-type: square;}
+#forma-parte-form button {border-radius: 0px;}
+
+#forma-parte-form input::-webkit-input-placeholder {/* WebKit, Blink, Edge */ color: #cccccc;}
+#forma-parte-form input:-moz-placeholder {/* Mozilla Firefox 4 to 18 */ color: #cccccc; opacity: 1;}
+#forma-parte-form input::-moz-placeholder {/* Mozilla Firefox 19+ */ color: #cccccc; opacity: 1;}
+#forma-parte-form input:-ms-input-placeholder {/* Internet Explorer 10-11 */ color: #cccccc;}
+
+
+/*----------------------------------------------------------------------------------
+	FOOTER
+----------------------------------------------------------------------------------*/
+#pre-footer {position: relative; background: url("../images/bg-prefooter.jpg") center no-repeat; padding: 50px 0;}
+#pre-footer::before, #pre-footer::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    opacity: .9;
+}
+
+#pre-footer::before {left: 0; background-color: #0a7143;}
+#pre-footer::after {left: 50%; background-color: #db1f26;}
+#pre-footer .container {position: relative; z-index: 2;}
+
+#contact-form .input {
+    background-color: transparent;
+    border: solid 1px #fff;
+    border-radius: 0px;
+    color:#fff;
+    padding: 5px;
+    font-size: 15px;
+    display: block;
+}
+
+#contact-form .form-control:focus {box-shadow: none;}
+
+#contact-form .input::-webkit-input-placeholder {/* WebKit, Blink, Edge */ color: #eeeeee;}
+#contact-form .input:-moz-placeholder {/* Mozilla Firefox 4 to 18 */ color: #eeeeee; opacity: 1;}
+#contact-form .input::-moz-placeholder {/* Mozilla Firefox 19+ */ color: #eeeeee; opacity: 1;}
+#contact-form .input:-ms-input-placeholder {/* Internet Explorer 10-11 */ color: #eeeeee;}
+
+#contact-form button {border-radius: 0px;}
+
+footer {background-color: #343a40; color: #fff; text-transform: uppercase; font-size: 12px; padding: 16px 0;}
+footer ul.navigation {margin: 0; padding: 0; list-style-type: none;}
+footer ul.navigation li {display: inline-block; margin-left: 10px; margin-right: 10px;}
+footer ul.navigation li a {color: #fff;}
+
+footer ul.redes {margin: 0; padding: 0; list-style-type: none;}
+footer ul.redes li {display: inline-block; padding: 0 5px; width: 30px;}
+
+
+/*----------------------------------------------------------------------------------
+	MEDIA QUERIES
+----------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1640px) {
+}
+
+@media only screen and (max-width: 1450px) {
+}
+
+@media only screen and (max-width: 1199px) {
+}
+
+/* @media only screen and (min-width: 992px) {
+    header::before, #header::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        top: 0;
+        left: 50%;
+    }
+
+    header::before {background-color: #0a7143; height: 45%; top: 0;}
+    header::after {background-color: #db1f26; height: 55%; top: 45%;}
+} */
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 479px) {
+}

@@ -1,0 +1,83 @@
+.medios {
+    color: #313437;
+    padding: 50px 0 55px;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #db1f26 !important;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+
+}
+
+.titulosec { 
+    color: rgb(219, 31, 38) !important;
+}
+
+
+
+.fondored {
+    padding-top: 50px !important;
+        background-color: #db1f26 !important;
+}
+.parrafos {
+    padding-bottom: 16px !important;
+    color:#fff;
+    text-align: center !important;
+}
+
+.texto-white {
+    color: #fff !important;
+}
+
+.texto-center {
+    text-align: center !important;
+}
+
+.media {
+   margin-top:10px;
+   filter: drop-shadow(-6px 6px 6px #aeaeae);
+   
+}
+
+.texto {
+    
+    margin-top: 75px;
+}
+
+.titulo-seccion {
+    
+    max-width: 100%;
+    color: #17181d;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 7rem;
+    padding: 19px .5rem;
+}
+
+.align-items-stretch {
+    -ms-flex-align: stretch!important;
+    align-items: stretch!important;
+    /* margin-top: 39px; */
+    position: relative;
+    top: -62px;
+}
+.card-title {
+    margin-bottom: .75rem;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+
+.fondogreen {
+    background-color: #0a7143 !important;
+    color: white;
+}
+
+.table-propuesta {
+    margin: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
